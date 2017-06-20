@@ -1,0 +1,59 @@
+#title {
+	text-align: center;
+	background-color: blue;
+	font-family: 'IM Fell English SC', serif;
+}
+#tron{
+	font-family: 'IM Fell English SC', serif;
+	background-color: green;
+}
+body {
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+	text-align: center;
+	background-size: 100%;
+	font-family: 'Henny Penny', cursive;
+	color: blue;
+}
+#form{
+	text-align: center;
+	font-family: 'Henny Penny', cursive;
+}
+.table{
+	text-align: center;
+	font-family: 'Henny Penny', cursive;
+}
+#submit{
+	background-color: green;
+	font-family: 'Henny Penny', cursive;
+}
+#trainTable{
+	text-align: center;	
+	font-family: 'Henny Penny', cursive;
+}
+#ftt{
+	text-align: center;	
+	font-family: 'IM Fell English SC', serif;
+}
+#thead{
+	text-align: center;	
+	font-family: 'IM Fell English SC', serif;
+}
+#headers{
+	text-align: center;		
+	font-family: 'IM Fell English SC', serif;
+}
+#trainform{
+	font-family: 'Henny Penny', cursive;
+}
+#panel-heading{
+	font-family: 'Henny Penny', cursive;
+}
+#ph{
+	font-family: 'Henny Penny', cursive;
+}
+th{
+	float: center;
+	text-align: center;		
+	font-family: 'IM Fell English SC', serif;
+}

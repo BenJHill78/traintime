@@ -4,12 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Train Times</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/train.css">
+	<link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet"> 
 	<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
-
+	<link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Henny+Penny" rel="stylesheet">  
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
 </head>
 <body>
 	<header>
@@ -20,66 +22,53 @@
 	</div>
 </nav>
 </header>
-<!--<div id="title"><h1> Train Schedules <span id="panel-title"></span></h1></div>-->
-
 <div class="container">
 	<div class="row">
-		<!--Current Train Schedule Panel -->
-		<!--<div class="col-lg-12">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">Current Train Schedule</h3>
+		<!--<div class="panel-body">-->
+		<div class="panel panel-default">
+			<div class="panel-heading" id="ph">
+				<h3 class="panel-title">Current Train Schedule</h3></div>
+				<div class="panel-body">
+					<table class="table">
+						<thead>
+							<tr>
+								<div id="headers">
+									<th>Train Name</th>
+									<th>Destination</th>
+									<th>Frequency (min)</th>
+									<th>Next Arrival</th>
+									<th>Minutes away</th>
+								</div>
+							</tr>
+						</thead>
+						<tbody id="trainTable"></tbody>
+					</table>
 				</div>
-				<div class="panel-body">-->
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">Current Train Schedule</h3></div>
-							<div class="panel-body">
-								<table class="table">
-									<thead>
-										<tr>
-											<th>Train Name</th>
-											<th>Destination</th>
-											<th>Frequency (min)</th>
-											<th>Next Arrival</th>
-											<th>Minutes away</th>
-										</tr>
-									</thead>
-									<tbody id="trainTable"></tbody>
-								</table>
-							</div>
-
-					<!--<div class="col-sm-3">1</div>
-					<div class="col-sm-3">2</div>
-					<div class="col-sm-2">3</div>
-					<div class="col-sm-2">4</div>
-					<div class="col-sm-2">5</div>
-					<hr>
-				</div>-->
 			</div>
 		</div>
 		<br><br>
 		<!-- Adding train Info Panel -->
 		<div class="col-lg-12">
 			<div class="panel panel-default">
-				<div class="panel-heading">
+				<div class="panel-heading" id="ph">
 					<h3 class="panel-title">Add Train</h3>
 				</div>
 				<div class="panel-body">
 					<div id="title">
 					</div>
-					<div id="form"></div>
-					<form id="trainForm">
-						Train Name: <br><input type="text" id="trainName">
-						<br><br>
-						Destination: <br><input type="text" id="finalDestination">
-						<br><br>
-						First Train Time(HH:mm - military time): <br><input type="text" id="ftt">
-						<br><br>
-						Frequency (min): <br><input type="text" id="totalFrequency">
-						<br><br>
-						<button id="submit">Submit</button>
-					</form>
+					<div id="form">
+						<form id="trainForm">
+							Train Name: <br><input type="text" id="trainName">
+							<br><br>
+							Destination: <br><input type="text" id="finalDestination">
+							<br><br>
+							First Train Time(HH:mm - military time): <br><input type="text" id="ftt">
+							<br><br>
+							Frequency (min): <br><input type="text" id="totalFrequency">
+							<br><br>
+							<button id="submit">Submit</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -87,6 +76,6 @@
 </div>
 <!-- Javascript link -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-<script type="text/javascript" src="train.js"></script>
+<script type="text/javascript" src="assets/javascript/train.js"></script>
 </body>
 </html>
